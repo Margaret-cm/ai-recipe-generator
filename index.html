@@ -7,41 +7,45 @@
     <title>AI Muffins Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Muffins Recipe Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter key ingredient"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Recipe line 1
-        <br />
-        Recipe line 2
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI Muffins Recipe Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter key ingredient"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit" value="Generate Recipe" />
+        </form>
+        <div class="recipe">
+          Recipe line 1
+          <br />
+          Recipe line 2
+        </div>
+      </main>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Margaret-cm/" target="_blank">Margaret C M</a
-      >, is
-      <a
-        href="https://github.com/Margaret-cm/ai-recipe-generator"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://mcm-ai-recipe-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Margaret-cm/" target="_blank"
+          >Margaret C M</a
+        >, is
+        <a
+          href="https://github.com/Margaret-cm/ai-recipe-generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://mcm-ai-recipe-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
