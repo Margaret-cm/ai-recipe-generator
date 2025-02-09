@@ -52,6 +52,7 @@ form {
   line-height: 1.5;
   border-left: 3px solid rgba(128, 0, 128, 0.568);
   font-size: 16px;
+  padding: 16px;
 }
 
 footer {
