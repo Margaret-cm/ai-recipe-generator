@@ -40,8 +40,7 @@ form {
   color: #272044;
 }
 input:focus {
-  outline: none;
-  border-color: rgba(128, 0, 128, 0.568);
+  outline: rgba(128, 0, 128, 0.568);
 }
 
 .hint {
