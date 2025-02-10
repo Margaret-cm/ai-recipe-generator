@@ -39,6 +39,10 @@ form {
   border-radius: 20px;
   color: #272044;
 }
+input:focus {
+  outline: none;
+  border-color: rgba(128, 0, 128, 0.568);
+}
 
 .hint {
   margin-top: 5px;
