@@ -19,11 +19,14 @@ h1 {
   font-weight: bolder;
 }
 
-form {
+.form-wrapper {
   background-color: white;
   padding: 30px;
   margin-bottom: 30px;
   border-radius: 6px;
+}
+
+form {
   display: flex;
 }
 
@@ -35,6 +38,16 @@ form {
   line-height: 20px;
   border-radius: 20px;
   color: #272044;
+}
+
+.hint {
+  margin-top: 5px;
+  margin-left: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #272044;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
 }
 
 .submit {
@@ -55,6 +68,14 @@ form {
   padding: 16px;
 }
 
+.recipe strong {
+  color: rgba(128, 0, 128, 0.568);
+}
+
+.hide {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
@@ -65,6 +86,12 @@ a {
   color: rgba(128, 0, 128, 0.568);
 }
 
-.recipe strong {
-  color: rgba(128, 0, 128, 0.568);
+.processing {
+  animation: blink 2s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

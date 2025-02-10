@@ -22,7 +22,8 @@ function generateRecipe(event) {
   let prompt = `User preferences: generate a muffins recipe which satisfies the user preferences ${preferencesInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let processing = document.querySelector("#recipe");
-  processing.innerHTML = "Generating your recipe... Please wait";
+  processing.classList.remove("hide");
+  processing.innerHTML = `<div class="processing">Generating your recipe... Please wait</div>`;
 
   //Make Axios call to API
   axios.get(apiUrl).then(displayRecipe);

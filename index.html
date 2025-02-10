@@ -14,19 +14,22 @@
         <h1>AI Muffins Recipe Generator</h1>
       </header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter key ingredient or flavor"
-            autofocus
-            required
-            autocomplete="off"
-            class="preferences"
-            id="user-preferences"
-          />
-          <input type="submit" class="submit" value="Generate Recipe" />
-        </form>
-        <div class="recipe" id="recipe">Recipe Here</div>
+        <div class="form-wrapper">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter key ingredient, flavor or type"
+              autofocus
+              required
+              autocomplete="off"
+              class="preferences"
+              id="user-preferences"
+            />
+            <input type="submit" class="submit" value="Generate Recipe" />
+          </form>
+          <div class="hint">e.g. vanilla, savory, sweet, choc-chip</div>
+        </div>
+        <div class="recipe hide" id="recipe">Recipe Here</div>
       </main>
 
       <footer>
